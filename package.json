@@ -1,0 +1,23 @@
+{
+  "name": "valentine",
+  "version": "1.0.0",
+  "description": "Valentine proposal app",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aremumahmud/valentine.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "canvas-confetti": "^1.9.2"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}

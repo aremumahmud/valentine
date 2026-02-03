@@ -1,3 +1,5 @@
+import confetti from 'canvas-confetti';
+
 const noBtn = document.getElementById('noBtn');
 const yesBtn = document.getElementById('yesBtn');
 const nextStepBtn = document.getElementById('nextStepBtn');
