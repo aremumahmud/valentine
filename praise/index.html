@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine?</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="background-overlay"></div>
+
+    <div class="card">
+        <header>
+            <h1 id="main-title" class="fade-in">Hi there! 👋</h1>
+            <p id="sub-title" class="subtitle fade-in-delay">I have a surprise for you...</p>
+        </header>
+
+        <!-- Navigation for the Story/Hype -->
+        <div id="navigation-container" class="fade-in-delay-2">
+            <button id="nextStepBtn" class="btn btn-primary">
+                Next ➡️
+            </button>
+        </div>
+
+        <!-- The Proposal Buttons (Hidden initially) -->
+        <div id="proposal-buttons" class="buttons hidden">
+            <button id="yesBtn" class="btn btn-primary">
+                YES! 💖
+            </button>
+            <button id="noBtn" class="btn btn-secondary">
+                No 😢
+            </button>
+            <p id="no-message" class="error-text hidden"></p>
+        </div>
+
+        <div id="successMessage" class="hidden">
+            <img src="../bear-kiss-bear-kisses.gif" alt="Cute bear kiss" class="success-gif">
+            <h2>Yay! I love you <span id="success-name">Praise</span>! ❤️</h2>
+            <p>You're the best Valentine ever!</p>
+        </div>
+    </div>
+
+
+
+    <!-- Confetti Library -->
+    <script type="module" src="../script.js"></script>
+</body>
+
+</html>

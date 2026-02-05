@@ -76,23 +76,39 @@ const profiles = {
   },
   ajoke: {
     name: "Ajoke",
-    nickname: "Ajoke",
+    nickname: "Ajoke baby",
     steps: [
       {
         title: "Wait...",
         subtitle: "Is that <strong>Ajoke</strong>?? 👀"
       },
       {
-        title: "Stunning ✨",
-        subtitle: "Your smile lights up the room!"
+        title: "My Sweet ajokeeeeeee 😍😍",
+        subtitle: "You are absolutely lovely!"
       },
       {
-        title: "Grace and Beauty...",
-        subtitle: "You are simply wonderful."
+        title: "Caramelicious babyyyyyy 😍😋",
+        subtitle: "Sweetest thing ever."
       },
       {
-        title: "Ajoke Miiii ❤️",
-        subtitle: "So happy you're here."
+        title: "Beautiful eyes... 😩😩😩",
+        subtitle: "...that I could drown in."
+      },
+      {
+        title: "My Morning Sun ☀️",
+        subtitle: "You shine brighter than any star in the sky."
+      },
+      {
+        title: "My Serendipity ✨",
+        subtitle: "The beautiful accident I was waiting for."
+      },
+      {
+        title: "Every Heartbeat 💓",
+        subtitle: "Beats only for you, my love."
+      },
+      {
+        title: "Ajoke ❤️",
+        subtitle: "Loving you is my favorite thing to do."
       },
       {
         title: "Question time 💍",
@@ -114,20 +130,59 @@ const profiles = {
         subtitle: "Is that <strong>Funmi</strong>?? 👀"
       },
       {
-        title: "Amazing ✨",
-        subtitle: "You are incredibly talented and kind!"
+        title: "My Unwritten Poem 📖",
+        subtitle: "You are the poetry my heart has always needed."
       },
       {
-        title: "Pure Magic...",
-        subtitle: "Everything you do is magic."
+        title: "My Safest Haven 🏡",
+        subtitle: "In your eyes, I have found my forever home."
       },
       {
-        title: "Funmi ❤️",
-        subtitle: "You're the best!"
+        title: "A Thousand Lifetimes ⏳",
+        subtitle: "I’d choose you in every single one of them."
+      },
+      {
+        title: "My Soulmate ❤️",
+        subtitle: "You are the missing piece of my soul."
       },
       {
         title: "Big Question 💍",
         subtitle: "Ready for it?"
+      },
+      {
+        title: "Will you be my Valentine?",
+        subtitle: "Please say yes! 🥺",
+        isFinal: true
+      }
+    ]
+  },
+  praise: {
+    name: "Praise",
+    nickname: "Praise",
+    steps: [
+      {
+        title: "Wait...",
+        subtitle: "Is that <strong>Praise</strong>?? 👀"
+      },
+      {
+        title: "My Morning Sun ☀️",
+        subtitle: "You shine brighter than any star in the sky."
+      },
+      {
+        title: "My Serendipity ✨",
+        subtitle: "The beautiful accident I was waiting for."
+      },
+      {
+        title: "Every Heartbeat 💓",
+        subtitle: "Beats only for you, my love."
+      },
+      {
+        title: "Praise ❤️",
+        subtitle: "Loving you is my favorite thing to do."
+      },
+      {
+        title: "Important Question 💍",
+        subtitle: "I have something to ask you..."
       },
       {
         title: "Will you be my Valentine?",
@@ -143,6 +198,7 @@ function getProfileFromPath() {
   if (path.includes('reggie')) return profiles.reggie;
   if (path.includes('ajoke')) return profiles.ajoke;
   if (path.includes('funmi')) return profiles.funmi;
+  if (path.includes('praise')) return profiles.praise;
   return profiles.teeteebee;
 }
 
