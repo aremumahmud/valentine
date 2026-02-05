@@ -11,33 +11,143 @@ const successMessage = document.getElementById('successMessage');
 const noMessage = document.getElementById('no-message');
 
 // Hype Sequence
-const steps = [
-  {
-    title: "Wait...",
-    subtitle: "Is that <strong>Boluwatife Temitope</strong>?? (aka Tee tee bee) 👀"
+const profiles = {
+  teeteebee: {
+    name: "Boluwatife Temitope",
+    nickname: "Tee tee bee",
+    steps: [
+      {
+        title: "Wait...",
+        subtitle: "Is that <strong>Boluwatife Temitope</strong>?? (aka Tee tee bee) 👀"
+      },
+      {
+        title: "Shining Melanin ✨",
+        subtitle: "You are absolutely glowing, my love!"
+      },
+      {
+        title: "Those eyes...",
+        subtitle: "Beautifully dangerous eyes that captivate me"
+      },
+      {
+        title: "Adunniiiiiii miiiiiii ❤️",
+        subtitle: "Temitope Miiiiiiiiiiiii"
+      },
+      {
+        title: "Iyawo Miiiiii 💍",
+        subtitle: "I have a very important question for you..."
+      },
+      {
+        title: "Will you be my Valentine?",
+        subtitle: "Please say yes! 🥺",
+        isFinal: true
+      }
+    ]
   },
-  {
-    title: "Shining Melanin ✨",
-    subtitle: "You are absolutely glowing, my love!"
+  reggie: {
+    name: "Reggie",
+    nickname: "Eniolamilekan",
+    steps: [
+      {
+        title: "Wait...",
+        subtitle: "Is that <strong>Eniolamilekannnnnn</strong>?? 👀"
+      },
+      {
+        title: "Sweet Voiceeee 😩😩😩",
+        subtitle: "I could listen to you forever."
+      },
+      {
+        title: "My Sweet Baby 😍😘",
+        subtitle: "My one and only."
+      },
+      {
+        title: "My Freak Match 😜😈",
+        subtitle: "We are perfect together ❤️‍🔥"
+      },
+      {
+        title: "Important Question 💍",
+        subtitle: "I have something to ask you..."
+      },
+      {
+        title: "Will you be my Valentine?",
+        subtitle: "Please say yes! 🥺",
+        isFinal: true
+      }
+    ]
   },
-  {
-    title: "Those eyes...",
-    subtitle: "Beautifully dangerous eyes that captivate me �"
+  ajoke: {
+    name: "Ajoke",
+    nickname: "Ajoke",
+    steps: [
+      {
+        title: "Wait...",
+        subtitle: "Is that <strong>Ajoke</strong>?? 👀"
+      },
+      {
+        title: "Stunning ✨",
+        subtitle: "Your smile lights up the room!"
+      },
+      {
+        title: "Grace and Beauty...",
+        subtitle: "You are simply wonderful."
+      },
+      {
+        title: "Ajoke Miiii ❤️",
+        subtitle: "So happy you're here."
+      },
+      {
+        title: "Question time 💍",
+        subtitle: "I have a question for you..."
+      },
+      {
+        title: "Will you be my Valentine?",
+        subtitle: "Please say yes! 🥺",
+        isFinal: true
+      }
+    ]
   },
-  {
-    title: "Adunniiiiiii miiiiiii ❤️",
-    subtitle: "Temitope Miiiiiiiiiiiii"
-  },
-  {
-    title: "Iyawo Miiiiii 💍",
-    subtitle: "I have a very important question for you..."
-  },
-  {
-    title: "Will you be my Valentine?",
-    subtitle: "Please say yes! 🥺",
-    isFinal: true
+  funmi: {
+    name: "Funmi",
+    nickname: "Funmi",
+    steps: [
+      {
+        title: "Wait...",
+        subtitle: "Is that <strong>Funmi</strong>?? 👀"
+      },
+      {
+        title: "Amazing ✨",
+        subtitle: "You are incredibly talented and kind!"
+      },
+      {
+        title: "Pure Magic...",
+        subtitle: "Everything you do is magic."
+      },
+      {
+        title: "Funmi ❤️",
+        subtitle: "You're the best!"
+      },
+      {
+        title: "Big Question 💍",
+        subtitle: "Ready for it?"
+      },
+      {
+        title: "Will you be my Valentine?",
+        subtitle: "Please say yes! 🥺",
+        isFinal: true
+      }
+    ]
   }
-];
+};
+
+function getProfileFromPath() {
+  const path = window.location.pathname;
+  if (path.includes('reggie')) return profiles.reggie;
+  if (path.includes('ajoke')) return profiles.ajoke;
+  if (path.includes('funmi')) return profiles.funmi;
+  return profiles.teeteebee;
+}
+
+const currentProfile = getProfileFromPath();
+const steps = currentProfile.steps;
 
 let currentStep = 0;
 
@@ -104,6 +214,11 @@ function moveButton() {
 
 // Interaction for the 'Yes' button
 yesBtn.addEventListener('click', () => {
+  // Update name in success message
+  const successNameSpan = document.getElementById('success-name');
+  if (successNameSpan) {
+    successNameSpan.textContent = currentProfile.nickname;
+  }
   // Trigger confetti
   launchConfetti();
 
