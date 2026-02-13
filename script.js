@@ -130,20 +130,20 @@ const profiles = {
         subtitle: "Is that <strong>Funmi</strong>?? 👀"
       },
       {
-        title: "My Unwritten Poem 📖",
-        subtitle: "You are the poetry my heart has always needed."
+        title: "My insanely beautiful babyy 😍",
+        subtitle: "You are absolute perfection."
       },
       {
-        title: "My Safest Haven 🏡",
-        subtitle: "In your eyes, I have found my forever home."
+        title: "Beautiful dark skinned damsel 🍫",
+        subtitle: "Your beauty radiates."
       },
       {
-        title: "A Thousand Lifetimes ⏳",
-        subtitle: "I’d choose you in every single one of them."
+        title: "Sweet Beautiful Lips 💋",
+        subtitle: "Irresistible and lovely."
       },
       {
-        title: "My Soulmate ❤️",
-        subtitle: "You are the missing piece of my soul."
+        title: "Sweet and soft Babyyyyy 🧸",
+        subtitle: "My precious love."
       },
       {
         title: "Big Question 💍",
