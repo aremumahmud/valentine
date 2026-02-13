@@ -190,6 +190,41 @@ const profiles = {
         isFinal: true
       }
     ]
+  },
+  treasure: {
+    name: "Treasure",
+    nickname: "Treasure",
+    steps: [
+      {
+        title: "Wait...",
+        subtitle: "Is that <strong>Treasure</strong>?? 👀"
+      },
+      {
+        title: "First wife miii 😩💍",
+        subtitle: "My number one woman."
+      },
+      {
+        title: "My partner in perfumeryyyyyyy 🌸🌸",
+        subtitle: "We always smell good!"
+      },
+      {
+        title: "Treasure thats not easy to findddd 💎",
+        subtitle: "A rare gem."
+      },
+      {
+        title: "Beautifullll light skinneddd trasureeee ✨",
+        subtitle: "You shine so bright."
+      },
+      {
+        title: "Important Question 💍",
+        subtitle: "I have something to ask you..."
+      },
+      {
+        title: "Will you be my Valentine?",
+        subtitle: "Please say yes! 🥺",
+        isFinal: true
+      }
+    ]
   }
 };
 
@@ -199,6 +234,7 @@ function getProfileFromPath() {
   if (path.includes('ajoke')) return profiles.ajoke;
   if (path.includes('funmi')) return profiles.funmi;
   if (path.includes('praise')) return profiles.praise;
+  if (path.includes('treasure')) return profiles.treasure;
   return profiles.teeteebee;
 }
 
